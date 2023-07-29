@@ -6,7 +6,8 @@ var n2 = Number.parseFloat(window.prompt("Digite um n2: ")) /* Number.parseFloat
 
 var media = n1 + n2
 
-window.alert("A soma dos valores é: " + media)
+window.alert(`A soma de ${n1} + ${n2} = ${media}`)
+
 
 
 
