@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="banco.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Contas Bancárias</h1>
+    </header>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Operações</h2>
+            <label for="account-type">Tipo de Conta:</label>
+            <select id="account-type">
+                <option value="ContaBancaria">Conta Bancária</option>
+                <option value="ContaCorrente">Conta Corrente</option>
+                <option value="ContaPoupanca">Conta Poupança</option>
+                <option value="ContaUniversitaria">Conta Universitária</option>
+            </select>
+            <label for="agency">Agência:</label>
+            <input type="text" id="agency">
+            <label for="account-number">Número da Conta:</label>
+            <input type="text" id="account-number">
+            <label for="balance">Saldo:</label>
+            <input type="text" id="balance">
+            <label for="credit-card">Cartão de Crédito (Conta Corrente):</label>
+            <input type="text" id="credit-card">
+            <button id="insert-button">Inserir</button>
+            <button id="delete-button">Deletar</button>
+            <button id="view-button">Visualizar</button>
+        </div>
+        <div class="right-panel">
+            <h2>Extrato / Saldo</h2>
+            <ul id="account-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Gerenciador Bancário</p>
+    </footer>
+    <script src="banco.js"></script>
+</body>
+</html>
