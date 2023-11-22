@@ -1,0 +1,108 @@
+body, h1, h2, ul, p, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 300px;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contas, #extrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#graficos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+#listaContas {
+    list-style-type: none;
+    padding: 0;
+}
+
+#opcoes button {
+    margin-right: 10px;
+}
+
+#graficos button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+}
+
+#graficos button:hover {
+    background-color: #219d54;
+}
+
+#contas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+

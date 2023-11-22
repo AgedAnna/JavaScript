@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contas Bancárias</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="ContaBancaria.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="body">
+        <div id="form">
+            <h1>BANK</h1>
+            <!-- Formulário para inserir detalhes da conta -->
+            <form id="contaForm" autocomplete="off">
+                <label for="agencia">Agência:</label>
+                <input type="text" id="agencia" required>
+                <br><br>
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" required>
+                <br><br>
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                    <option value="Conta Corrente">Conta Corrente</option>
+                    <option value="Conta Poupança">Conta Poupança</option>
+                    <option value="Conta Universitária">Conta Universitária</option>
+                </select>
+                <br><br>
+                <label for="saldo">Saldo:</label>
+                <input type="text" id="saldo" required>
+                <br><br>
+                <button type="button" onclick="inserirConta()">Inserir</button>
+            </form>
+        </div>
+        <div>
+        <div id="extrato"></div>
+        <div id="contas">
+            <!-- Lista de contas -->
+            <h2>Contas Bancárias</h2>
+            <ul id="listaContas"></ul>
+            <!-- Botão para deletar conta -->
+            <label for="contaToDelete">Selecione uma conta :</label>
+            <select id="contaToDelete"></select>
+            <button type="button" onclick="deletarConta()">Deletar</button>
+            <button type="button" onclick="visualizarContas()">Selecionar</button>
+        </div>
+            <h2>Operações Bancárias</h2>
+            <p id="contaselect">#Conta selecionada#</p>
+            <div id="opcoes">
+                <label for="valor">Valor: </label>
+                <input type="text" id="valor" >
+                <br><br>
+                <button type="button" onclick="sacar()">Sacar</button>
+                <button type="button" onclick="depositar()">Depositar</button>
+                <button type="button" onclick="extrato()">Extrato</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" onclick="criarGrafico()">Criar Gráfico</button>
+    <div id="graficos">
+        <div style="width: 30%; margin: auto;"><canvas id="grafico_corr"></canvas></div>
+        <div style="width: 30%; margin: auto;"><Canvas id="grafico_poup"></Canvas></div>
+        <div style="width: 30%; margin: auto;"><Canvas id="grafico_univ"></Canvas></div>
+    </div>
+    <script src="graficos.js">
+    </script>
+    
+    
+</body>
+</html>
